@@ -1,1 +1,0 @@
- # if(c_cropname == "rice"):
