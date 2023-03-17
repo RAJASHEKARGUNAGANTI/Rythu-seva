@@ -13,6 +13,14 @@ def home():
 def crop():
     return render_template("crop.html")
 
+@app.route('/fertilizer')
+def fertilizer():
+    return render_template("fertilizer.html")
+
+@app.route('/index')
+def fertilizer():
+    return render_template("home.html")
+
 @app.route('/crop_recommend', methods=['POST'])
 def result():
     print(request.form)
@@ -39,3 +47,5 @@ def result():
 
 if __name__ == '__main__':
     app.run()
+    # app.run(host = 'localhost', port =800)
+
